@@ -45,7 +45,8 @@
             <a href="#anatomy">Устройство</a>
             <a href="#patterns">Схемы</a>
             <a href="#tools">Инструменты</a>
-            <a href="#try">Идеи</a>
+            <a href="#first">Первый вечер</a>
+            <a href="#try">Идеи + how-to</a>
             <a href="#plan">План</a>
             <a href="#final" class="nav__links-cta">Обсудить проект →</a>
         </nav>
@@ -70,11 +71,11 @@
             студии<span class="accent">.</span>
         </h1>
         <p class="hero__lede">
-            Как перестать носить информацию руками и собрать рабочие цепочки, которые помогают думать, проверять и быстрее выпускать работу.
+            Практический разбор: как за один вечер собрать первый рабочий агент, который читает бриф и возвращает сводку — вместо того чтобы копировать текст между окнами.
         </p>
         <div class="hero__actions">
-            <a href="#idea" class="btn btn--primary">С чего начать →</a>
-            <a href="#plan" class="btn btn--ghost">План на месяц</a>
+            <a href="#first" class="btn btn--primary">Первый вечер за 30 минут →</a>
+            <a href="#try" class="btn btn--ghost">Идеи с how-to</a>
         </div>
         <div class="hero__meta">
             На основе менторинга Саши Алхименкова
@@ -110,7 +111,7 @@
             <p><span class="accent">Агент не заменяет вкус.</span><br>Он забирает курьерскую работу.</p>
         </blockquote>
         <p class="section__note">
-            Сейчас мы часто переносим контекст между чатами, файлами, папками и людьми. Агентная система должна вернуть время туда, где оно нужно: в постановку задачи, выбор, критику, сборку и финальное решение.
+            Сейчас ты переносишь контекст между чатом, файлами и Трекером руками. Агент — это тот же ChatGPT, только он живёт в твоих файлах и умеет действовать: читать, править, ходить в интернет, дёргать сервисы. Первый вечер собирается за 30 минут по одной методичке. Дальше — вопрос вкуса, а не техники.
         </p>
     </div>
 </section>
@@ -118,23 +119,23 @@
 <section class="section reveal section--split">
     <div class="container">
         <div class="section__label">02 — Где мы сейчас</div>
-        <h2 class="section__title">Текущий контур нормальный.<br>Но у него есть потолок.</h2>
+        <h2 class="section__title">Схема рабочая.<br>Но ты в ней — курьер.</h2>
         <div class="grid grid--3">
             <div class="card">
                 <div class="card__num">Чат</div>
-                <p>одно окно, мало памяти, всё надо нести дальше руками</p>
+                <p>одно окно, память до конца сессии, ответ живёт только в браузере</p>
             </div>
             <div class="card">
                 <div class="card__num">Фреймы</div>
-                <p>заготовки есть, но они живут отдельно от файлов и результата</p>
+                <p>промпты и заготовки в папках, но модель их сама не читает</p>
             </div>
             <div class="card">
                 <div class="card__num">База</div>
-                <p>бренды и знания есть, но их приходится подмешивать вручную</p>
+                <p>бренды и правила есть — ты подмешиваешь их в каждый запрос вручную</p>
             </div>
         </div>
         <div class="callout">
-            Новый контур: одна папка проекта, постоянная инструкция, память, скиллы и агент, который работает прямо с файлами.
+            Дальше — способы убрать тебя из роли курьера: одна папка проекта, постоянная инструкция, память, и агент, который работает прямо с файлами.
         </div>
     </div>
 </section>
@@ -142,26 +143,26 @@
 <section id="anatomy" class="section reveal">
     <div class="container">
         <div class="section__label">03 — Из чего собран агент</div>
-        <h2 class="section__title">Три детали, без которых это всё<br>остаётся просто чатиком.</h2>
+        <h2 class="section__title">Три детали, без которых это<br>остаётся просто чатиком.</h2>
         <div class="grid grid--3">
             <div class="feature">
                 <div class="feature__index">01</div>
                 <h3>Контекст</h3>
-                <p>что модель видит сейчас</p>
+                <p>что модель видит прямо сейчас: твой запрос, куски файлов, результаты прошлых шагов. Окно конечно — забил мусором, модель поплыла.</p>
             </div>
             <div class="feature">
                 <div class="feature__index">02</div>
-                <h3>Инструмент</h3>
-                <p>чем она действует</p>
+                <h3>Инструменты</h3>
+                <p>чем модель действует: читать и писать файлы, запускать команды в терминале, ходить в интернет, дёргать трекер. Без них — просто чатик.</p>
             </div>
             <div class="feature">
                 <div class="feature__index">03</div>
                 <h3>Память</h3>
-                <p>что переживает один разговор</p>
+                <p>что переживает разговор: план задачи, заметки, база знаний. Это то, к чему модель возвращается между шагами.</p>
             </div>
         </div>
         <p class="section__note">
-            Дальше всё крутится циклом: <em>посмотреть → сделать шаг → проверить результат → продолжить</em>.
+            Дальше цикл: <em>посмотрел контекст → выбрал инструмент → сделал шаг → глянул результат → следующий</em>. Прерываемый: остановил в любой момент, поправил курс, отпустил дальше.
         </p>
     </div>
 </section>
@@ -169,27 +170,27 @@
 <section class="section reveal section--split">
     <div class="container">
         <div class="section__label">04 — Workflow или агент</div>
-        <h2 class="section__title">Не делать автономию там,<br>где нужна дисциплина.</h2>
+        <h2 class="section__title">Не включать автономию там,<br>где путь и так известен.</h2>
         <div class="compare">
             <div class="compare__col">
                 <div class="compare__title">WORKFLOW</div>
                 <ul>
-                    <li>Шаги прописаны заранее</li>
-                    <li>План → проверка → сборка → правка</li>
-                    <li>Дешевле, стабильнее, проще чинить</li>
+                    <li>Шаги прописаны в коде, модель идёт по рельсам</li>
+                    <li>Предсказуемо, дёшево по токенам, легко чинить</li>
+                    <li>Пример: разбор брифа по 4 шагам с проверкой</li>
                 </ul>
             </div>
             <div class="compare__col compare__col--dark">
                 <div class="compare__title">АГЕНТ</div>
                 <ul>
-                    <li>Модель сама решает, что делать</li>
+                    <li>Модель сама решает, какие шаги и какими инструментами</li>
                     <li>Гибко, но дороже и менее предсказуемо</li>
-                    <li>Включать там, где путь неясен</li>
+                    <li>Пример: ресёрч, где заранее не знаешь, куда идти</li>
                 </ul>
             </div>
         </div>
         <p class="section__note">
-            Для студии: большинство повторяемых задач — это workflow с точками контроля. Полная автономия нужна реже, чем кажется.
+            Почти всё реально рабочее — <b>workflow из пары шагов с проверкой между ними</b>. Полную автономию включай там, где путь заранее не знаешь.
         </p>
     </div>
 </section>
@@ -197,36 +198,36 @@
 <section id="patterns" class="section reveal">
     <div class="container">
         <div class="section__label">05 — Пять рабочих схем</div>
-        <h2 class="section__title">Ими можно читать почти<br>любой AI-инструмент.</h2>
+        <h2 class="section__title">Ими читается почти<br>любой AI-инструмент.</h2>
         <div class="grid grid--5">
             <div class="pattern">
                 <div class="pattern__num">01</div>
                 <div class="pattern__name">Цепочка</div>
-                <p>фиксированные шаги + проверка</p>
+                <p>фиксированные шаги с проверкой между ними. Написал план — идёшь по плану.</p>
             </div>
             <div class="pattern">
                 <div class="pattern__num">02</div>
                 <div class="pattern__name">Роутер</div>
-                <p>простое — дешёвой модели, сложное — сильной</p>
+                <p>сначала классифицируешь вход, потом отправляешь в нужную ветку.</p>
             </div>
             <div class="pattern">
                 <div class="pattern__num">03</div>
                 <div class="pattern__name">Параллель</div>
-                <p>несколько путей сразу</p>
+                <p>один вход гоняешь несколькими путями сразу — либо разные куски, либо для надёжности.</p>
             </div>
             <div class="pattern">
                 <div class="pattern__num">04</div>
                 <div class="pattern__name">Оркестратор</div>
-                <p>ведущий раздаёт воркерам</p>
+                <p>ведущий бьёт задачу на куски и раздаёт субагентам. Когда куски заранее не известны.</p>
             </div>
             <div class="pattern">
                 <div class="pattern__num">05</div>
                 <div class="pattern__name">Оценщик</div>
-                <p>один делает, второй критикует</p>
+                <p>один генерит, второй критикует. По кругу, пока не станет хорошо.</p>
             </div>
         </div>
         <div class="callout">
-            Для креативной студии базовый набор: <b>цепочка</b> для разбора, <b>оценщик</b> для критики, <b>параллель</b> для ресёрча и территорий.
+            Для студии базовый набор: <b>цепочка</b> для разбора брифа, <b>оценщик</b> для критики черновиков, <b>параллель</b> для ресёрча территорий.
         </div>
     </div>
 </section>
@@ -234,49 +235,83 @@
 <section id="tools" class="section reveal">
     <div class="container">
         <div class="section__label">06 — Инструменты на одной оси</div>
-        <h2 class="section__title">Вопрос не в названии модели.<br>Вопрос — где живёт агент.</h2>
+        <h2 class="section__title">Вопрос не в модели.<br>Вопрос — где живёт агент.</h2>
         <div class="grid grid--4">
             <div class="tool">
                 <div class="tool__badge tool__badge--pick">Основной</div>
                 <h3>Claude Code</h3>
-                <p>Терминальный агент. Работает прямо с папками и файлами.</p>
+                <p>Терминальный агент. Настоящие субагенты с чистым контекстом, окно до миллиона токенов, скиллы под рутину.</p>
             </div>
             <div class="tool">
                 <div class="tool__badge tool__badge--pick">Основной</div>
                 <h3>Codex</h3>
-                <p>Терминал + облако. Хорош для последовательных процессов.</p>
+                <p>Одна связка на терминал, IDE, облако, GitHub, Slack. Силён в долгих автономных прогонах. Заперт на моделях OpenAI.</p>
             </div>
             <div class="tool">
                 <div class="tool__badge">Опция</div>
                 <h3>Cursor</h3>
-                <p>Редактор с агентом. Визуальный, гибкий выбор моделей.</p>
+                <p>Форк VS Code вокруг ИИ. Выбор модели под задачу, привычный редактор. Летом 2025 были неожиданные счета — следи за расходом.</p>
             </div>
             <div class="tool">
                 <div class="tool__badge tool__badge--future">В поле зрения</div>
                 <h3>Antigravity</h3>
-                <p>Агент-платформа. Взгляд в будущее, не под дедлайн.</p>
+                <p>Гугловая агент-платформа: инбокс задач, агент сам ходит в браузер и тестирует. Сырой интерфейс — не под дедлайн.</p>
             </div>
         </div>
         <p class="section__note">
-            Модели меняются каждый месяц. <b>Парадигма важнее ярлыка.</b>
+            Модели меняются каждый месяц — <b>парадигма важнее ярлыка</b>. Начинать стоит с терминального агента: рабочие цепочки и скиллы — его родная территория.
         </p>
     </div>
 </section>
 
-<section class="section reveal">
+<section id="first" class="section reveal">
     <div class="container">
-        <div class="section__label">07 — Первые 30 минут</div>
-        <h2 class="section__title">Руками почувствовать разницу<br>между чатом и агентом.</h2>
-        <ol class="steps">
-            <li><span>1</span>Поставить агент</li>
-            <li><span>2</span>Открыть папку</li>
-            <li><span>3</span>Попросить прочитать</li>
-            <li><span>4</span>Дать маленькую правку</li>
-            <li><span>5</span>Принять одно, отклонить другое</li>
-        </ol>
-        <p class="section__note">
-            Не спешить в автомат. Сначала режим, где агент спрашивает разрешение на каждое действие. Автомат — только на песочнице и после доверия.
-        </p>
+        <div class="section__label">07 — Первый вечер</div>
+        <h2 class="section__title">За 30 минут — от установки<br>до сводки по своему брифу.</h2>
+        <div class="firstnight">
+            <div class="firstnight__step">
+                <div class="firstnight__step-num">1</div>
+                <div class="firstnight__step-body">
+                    <div class="firstnight__step-title">Поставить агента</div>
+                    <p>Открой Terminal и введи:</p>
+                    <code class="firstnight__cmd">npm install -g @anthropic-ai/claude-code</code>
+                    <p class="firstnight__hint">Нужен Node.js и подписка Claude — для старта хватит за $20/мес. Дальше при каждом запуске просто пишешь <code>claude</code>.</p>
+                </div>
+            </div>
+            <div class="firstnight__step">
+                <div class="firstnight__step-num">2</div>
+                <div class="firstnight__step-body">
+                    <div class="firstnight__step-title">Открыть папку с брифом</div>
+                    <p>Возьми любой обезличенный бриф. Положи его в отдельную папку — прямо на рабочем столе:</p>
+                    <code class="firstnight__cmd">cd ~/Desktop/razbor-brifov &amp;&amp; claude</code>
+                    <p class="firstnight__hint">Или перетащи папку мышкой прямо в окно Terminal — путь подставится сам.</p>
+                </div>
+            </div>
+            <div class="firstnight__step">
+                <div class="firstnight__step-num">3</div>
+                <div class="firstnight__step-body">
+                    <div class="firstnight__step-title">Дать первую задачу</div>
+                    <p>Просто скажи агенту:</p>
+                    <code class="firstnight__cmd firstnight__cmd--quote">Прочитай бриф в этой папке. Разбери по шагам: приёмка, противоречия, флаги, сводка на одну страницу. Ничего не пиши, пока не покажешь план.</code>
+                    <p class="firstnight__hint">Читаешь план, поправляешь одну строчку, отпускаешь дальше.</p>
+                </div>
+            </div>
+            <div class="firstnight__step">
+                <div class="firstnight__step-num">4</div>
+                <div class="firstnight__step-body">
+                    <div class="firstnight__step-title">Отклонить одно, принять другое</div>
+                    <p>Агент показывает каждое изменение как <em>«было → стало»</em>. Отклоняешь одно, принимаешь другое — почувствуй, как ты контролируешь, а не только читаешь.</p>
+                    <p class="firstnight__hint">Не переключайся в автомат. Начинай в режиме «спрашивает на каждое действие» — <code>Shift+Tab</code> переключает режимы.</p>
+                </div>
+            </div>
+            <div class="firstnight__step firstnight__step--result">
+                <div class="firstnight__step-num">→</div>
+                <div class="firstnight__step-body">
+                    <div class="firstnight__step-title">Что получишь</div>
+                    <p>Сводку по брифу на одну страницу + список конкретных вопросов клиенту. За те же полчаса, что раньше уходили на первое чтение и заметки. Это твой первый маленький впечатляющий результат.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -287,23 +322,31 @@
         <div class="rules">
             <div class="rule">
                 <div class="rule__key">Сначала план</div>
-                <div class="rule__val">ничего не менять, пока план не принят</div>
+                <div class="rule__val">«расскажи, как будешь делать, ничего не трогай». Поправить план дешевле, чем полчаса не туда.</div>
             </div>
             <div class="rule">
                 <div class="rule__key">Заставь спрашивать</div>
-                <div class="rule__val">не хватает данных — вопросы, не догадки</div>
+                <div class="rule__val">«если чего-то не хватает — сначала вопросы, а не догадки». Одна фраза выключает додумывание.</div>
             </div>
             <div class="rule">
                 <div class="rule__key">Мелкими шагами</div>
-                <div class="rule__val">одна задача за запрос</div>
+                <div class="rule__val">одна задача за запрос. Не «собери целиком», а «сделай шаг, покажи, дальше решу».</div>
             </div>
             <div class="rule">
                 <div class="rule__key">Новый чат</div>
-                <div class="rule__val">новая задача — чистое окно</div>
+                <div class="rule__val">закончил задачу — новая сессия. Старый контекст подмешивается в решения.</div>
             </div>
             <div class="rule">
                 <div class="rule__key">Проси доказательство</div>
-                <div class="rule__val">покажи файл, команду, проверку</div>
+                <div class="rule__val">«покажи, чем ты это проверил»: вывод команды, кусок результата, конкретный файл.</div>
+            </div>
+            <div class="rule">
+                <div class="rule__key">Отправь в разведку</div>
+                <div class="rule__val">«сходи в интернет, дай ссылки на первоисточники». Когда нужны свежие данные или чужие продукты.</div>
+            </div>
+            <div class="rule">
+                <div class="rule__key">Диктуй, не печатай</div>
+                <div class="rule__val">длинную постановку быстрее наговорить. Агент сам структурирует сырьё.</div>
             </div>
         </div>
     </div>
@@ -314,11 +357,11 @@
         <div class="section__label">09 — Что это даст студии</div>
         <h2 class="section__title">Не скорость ради скорости.<br>Спокойнее вход, чище решения.</h2>
         <div class="benefits">
-            <div class="benefit"><b>Брифы</b><span>меньше дыр и противоречий на старте</span></div>
-            <div class="benefit"><b>Встречи</b><span>быстрее превращаются в решения</span></div>
-            <div class="benefit"><b>Копирайт</b><span>меньше AI-следов и канцелярита</span></div>
-            <div class="benefit"><b>Дизайн</b><span>чётче критерии перед отдачей</span></div>
-            <div class="benefit"><b>КД</b><span>больше времени на выбор и критику</span></div>
+            <div class="benefit"><b>Брифы</b><span>разбор за один заход: дыры, противоречия и флаги подсвечены</span></div>
+            <div class="benefit"><b>Встречи</b><span>саммари, решения и задачи без ручной перепечатки</span></div>
+            <div class="benefit"><b>Копирайт</b><span>черновики в тоне бренда, без канцелярита и AI-следов</span></div>
+            <div class="benefit"><b>Дизайн</b><span>критерии, референсы и чек-лист приложены к отдаче</span></div>
+            <div class="benefit"><b>КД</b><span>время возвращается в критику и выбор, а не перенос текста</span></div>
         </div>
         <div class="callout callout--emph">
             Человек остаётся там, где нужна ответственность.
@@ -329,7 +372,7 @@
 <section id="try" class="section reveal">
     <div class="container">
         <div class="section__label">10 — Попробовать сейчас</div>
-        <h2 class="section__title">Выбери роль.<br>Получи идею —<br>до пяти в день.</h2>
+        <h2 class="section__title">Выбери роль.<br>Получи идею с пошаговой<br>инструкцией — до пяти в день.</h2>
         <div class="try try--console">
             <div class="try__console-head">
                 <span class="try__console-tag">Генератор идей · v0.1</span>
@@ -366,24 +409,24 @@
         <h2 class="section__title">Сначала личный инструмент.<br>Потом демо. Потом наружу.</h2>
         <div class="timeline">
             <div class="week">
-                <div class="week__num">Неделя 1</div>
+                <div class="week__num">Неделя 1 · 3–4 часа</div>
                 <div class="week__title">Агент в руках</div>
-                <p>Установка, первая папка, диктовка, режимы</p>
+                <p>Поставить Claude Code, оформить подписку, пройти первые 30 минут на своей папке, включить диктовку.</p>
             </div>
             <div class="week">
-                <div class="week__num">Неделя 2</div>
+                <div class="week__num">Неделя 2 · вечер-два</div>
                 <div class="week__title">Перенести своё</div>
-                <p>Инструкции из ChatGPT, 2–3 брифа, персона пользователя</p>
+                <p>Вытащить инструкции из ChatGPT-агента, прогнать на 2–3 обезличенных брифах, завести персону внутреннего пользователя.</p>
             </div>
             <div class="week">
-                <div class="week__num">Неделя 3</div>
-                <div class="week__title">CJM + тесты</div>
-                <p>Карта пути коллеги, база знаний, эталонные брифы</p>
+                <div class="week__num">Неделя 3 · вечер-два</div>
+                <div class="week__title">CJM + самопроверки</div>
+                <p>Разобрать путь коллеги, заполнить базу по 2–3 брендам, собрать эталонный набор брифов для авто-прогона.</p>
             </div>
             <div class="week">
-                <div class="week__num">Неделя 4</div>
-                <div class="week__title">Интерфейс</div>
-                <p>Один бриф от загрузки до сводки, демо для ревью</p>
+                <div class="week__num">Неделя 4 · выходные</div>
+                <div class="week__title">Интерфейс и наружу</div>
+                <p>Один бриф от загрузки до сводки, GitHub и Render с ключом в переменных, демо для ревью по скелету «боль — показ — цифра».</p>
             </div>
         </div>
     </div>
