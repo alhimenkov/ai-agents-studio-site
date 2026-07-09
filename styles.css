@@ -1,28 +1,4 @@
-/* Fonts — YS (Yandex Sans) */
-@font-face {
-    font-family: 'YS Text';
-    src: url('fonts/YSTextWeb-Upright-weight-VF.woff2') format('woff2-variations'),
-         url('fonts/YSTextWeb-Upright-weight-VF.woff2') format('woff2');
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'YS Text';
-    src: url('fonts/YSTextWeb-Italic-weight-VF.woff2') format('woff2-variations'),
-         url('fonts/YSTextWeb-Italic-weight-VF.woff2') format('woff2');
-    font-weight: 100 900;
-    font-style: italic;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'YS Display Wide';
-    src: url('fonts/YSTextDisplayWideWeb-Upright-VF.woff2') format('woff2-variations'),
-         url('fonts/YSTextDisplayWideWeb-Upright-VF.woff2') format('woff2');
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
-}
+/* Fonts — Fira Sans Extra Condensed loaded via Google Fonts in index.html */
 
 /* Reset + tokens */
 *,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -43,8 +19,8 @@
     --accent-warm: #F0B429;
     --wrap: 1240px;
     --pad: clamp(20px, 5vw, 72px);
-    --f-sans: 'YS Text', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
-    --f-display: 'YS Display Wide', 'YS Text', -apple-system, BlinkMacSystemFont, sans-serif;
+    --f-sans: 'Fira Sans Extra Condensed', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+    --f-display: 'Fira Sans Extra Condensed', -apple-system, BlinkMacSystemFont, sans-serif;
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
