@@ -28,7 +28,7 @@
 
     <link rel="preload" href="fonts/YSTextWeb-Upright-weight-VF.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/YSTextDisplayWideWeb-Upright-VF.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 
@@ -268,48 +268,45 @@
     <div class="container">
         <div class="section__label">07 — Первый вечер</div>
         <h2 class="section__title">За 30 минут — от установки<br>до сводки по своему брифу.</h2>
-        <div class="firstnight">
-            <div class="firstnight__step">
-                <div class="firstnight__step-num">1</div>
-                <div class="firstnight__step-body">
-                    <div class="firstnight__step-title">Поставить агента</div>
-                    <p>Открой Terminal и введи:</p>
-                    <code class="firstnight__cmd">npm install -g @anthropic-ai/claude-code</code>
-                    <p class="firstnight__hint">Нужен Node.js и подписка Claude — для старта хватит за $20/мес. Дальше при каждом запуске просто пишешь <code>claude</code>.</p>
+        <div class="walk">
+            <div class="walk__item">
+                <div class="walk__num">01</div>
+                <div class="walk__body">
+                    <h3 class="walk__title">Поставить агента</h3>
+                    <p class="walk__desc">Открой Terminal и введи одну команду:</p>
+                    <pre class="walk__code">npm install -g @anthropic-ai/claude-code</pre>
+                    <p class="walk__note">Нужны Node.js и подписка Claude — для старта хватит за $20/мес. Дальше при каждом запуске просто пишешь <code>claude</code>.</p>
                 </div>
             </div>
-            <div class="firstnight__step">
-                <div class="firstnight__step-num">2</div>
-                <div class="firstnight__step-body">
-                    <div class="firstnight__step-title">Открыть папку с брифом</div>
-                    <p>Возьми любой обезличенный бриф. Положи его в отдельную папку — прямо на рабочем столе:</p>
-                    <code class="firstnight__cmd">cd ~/Desktop/razbor-brifov &amp;&amp; claude</code>
-                    <p class="firstnight__hint">Или перетащи папку мышкой прямо в окно Terminal — путь подставится сам.</p>
+            <div class="walk__item">
+                <div class="walk__num">02</div>
+                <div class="walk__body">
+                    <h3 class="walk__title">Открыть папку с брифом</h3>
+                    <p class="walk__desc">Возьми любой обезличенный бриф. Положи его в отдельную папку — прямо на рабочем столе:</p>
+                    <pre class="walk__code">cd ~/Desktop/razbor-brifov &amp;&amp; claude</pre>
+                    <p class="walk__note">Или перетащи папку мышкой в окно Terminal — путь подставится сам.</p>
                 </div>
             </div>
-            <div class="firstnight__step">
-                <div class="firstnight__step-num">3</div>
-                <div class="firstnight__step-body">
-                    <div class="firstnight__step-title">Дать первую задачу</div>
-                    <p>Просто скажи агенту:</p>
-                    <code class="firstnight__cmd firstnight__cmd--quote">Прочитай бриф в этой папке. Разбери по шагам: приёмка, противоречия, флаги, сводка на одну страницу. Ничего не пиши, пока не покажешь план.</code>
-                    <p class="firstnight__hint">Читаешь план, поправляешь одну строчку, отпускаешь дальше.</p>
+            <div class="walk__item">
+                <div class="walk__num">03</div>
+                <div class="walk__body">
+                    <h3 class="walk__title">Дать первую задачу</h3>
+                    <p class="walk__desc">Скажи агенту одну фразу:</p>
+                    <blockquote class="walk__quote">Прочитай бриф в этой папке. Разбери по шагам: приёмка, противоречия, флаги, сводка на одну страницу. Ничего не пиши, пока не покажешь план.</blockquote>
+                    <p class="walk__note">Читаешь план, поправляешь одну строчку, отпускаешь дальше.</p>
                 </div>
             </div>
-            <div class="firstnight__step">
-                <div class="firstnight__step-num">4</div>
-                <div class="firstnight__step-body">
-                    <div class="firstnight__step-title">Отклонить одно, принять другое</div>
-                    <p>Агент показывает каждое изменение как <em>«было → стало»</em>. Отклоняешь одно, принимаешь другое — почувствуй, как ты контролируешь, а не только читаешь.</p>
-                    <p class="firstnight__hint">Не переключайся в автомат. Начинай в режиме «спрашивает на каждое действие» — <code>Shift+Tab</code> переключает режимы.</p>
+            <div class="walk__item">
+                <div class="walk__num">04</div>
+                <div class="walk__body">
+                    <h3 class="walk__title">Отклонить одно, принять другое</h3>
+                    <p class="walk__desc">Агент показывает каждое изменение как «было → стало». Отклоняешь одно, принимаешь другое.</p>
+                    <p class="walk__note">Не переключайся в автомат. Начинай в режиме, где агент спрашивает разрешение на каждое действие — <code>Shift+Tab</code> переключает режимы.</p>
                 </div>
             </div>
-            <div class="firstnight__step firstnight__step--result">
-                <div class="firstnight__step-num">→</div>
-                <div class="firstnight__step-body">
-                    <div class="firstnight__step-title">Что получишь</div>
-                    <p>Сводку по брифу на одну страницу + список конкретных вопросов клиенту. За те же полчаса, что раньше уходили на первое чтение и заметки. Это твой первый маленький впечатляющий результат.</p>
-                </div>
+            <div class="walk__result">
+                <div class="walk__result-tag">Что получишь</div>
+                <p>Сводку по брифу на одну страницу и список конкретных вопросов клиенту. За те же полчаса, что раньше уходили на первое чтение и заметки.</p>
             </div>
         </div>
     </div>
@@ -475,6 +472,6 @@
     </div>
 </footer>
 
-<script src="main.js" defer></script>
+<script src="main.js?v=2" defer></script>
 </body>
 </html>
